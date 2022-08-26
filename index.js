@@ -9,35 +9,6 @@ const fs = require('fs');
 const yaml = require('js-yaml')
 const mongoose = require('mongoose')
 const economy = require('discord-bot-eco')
-    economy.setConfig({
-        mongoURL: "mongodb+srv://luciddev:qp6lMNldrcxqmdBG@cluster0.rqo7p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-        currency: "$",
-        allowBankruptcy: false,
-        limits: {
-            defaultBankLimit: 100,
-            enabled: true
-        },
-        shopEnabled: true,
-        shop: [
-            /*
-                Item properties can be modified but the following below must be kept as they are used in the module!
-                The entire item is returned when using it with functions, go crazy!
-            */
-            {
-                itemName: "House",
-                itemBuyPrice: 15000,
-                itemSellPrice: 12000,
-                itemBuyable: true,
-                itemSellable: true
-            }, {
-                itemName: "Condo",
-                itemBuyPrice: 5000,
-                itemSellPrice: 2500,
-                itemBuyable: true,
-                itemSellable: true
-            }
-        ]
-    });
 
 
 const client = new Client({
