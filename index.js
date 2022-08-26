@@ -10,7 +10,6 @@ const yaml = require('js-yaml')
 const mongoose = require('mongoose')
 const economy = require('discord-bot-eco')
 
-
 const client = new Client({
     intents: ['65527'],
 });
@@ -46,7 +45,6 @@ process.on("unhandledRejection", (reason, promise) => {
 
 handler.loadEvents(client);
 handler.loadSlashCommands(client);
-
 
 client.login(client.config.discord.botToken).catch(err =>  {
     console.log(`[StartUp Error] `.red + `An invalid Bot Token Was Provided, Please Fix This In The Config.yml`.italic);
