@@ -1,0 +1,13 @@
+#---------------------------------------
+
+# Eco Bot By V8
+
+#---------------------------------------
+
+discord: 
+  botToken: ""
+  mongoDBLink: ""
+
+discordCustomization: 
+  embedColor: "RED"
+  embedFooterText: ""
